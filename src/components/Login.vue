@@ -1,12 +1,12 @@
 <template>
-  <div class="home">
+  <div class="login">
 	  <form>
 		  <h1>Login</h1>
 		  <label for="username">Username</label><br>
 		  <input type="text" placeholder="username"><br>
 		  <label for="password">Password</label><br>
 		  <input type="password" placeholder="password"><br>
-		  <router-link to="/"><button>Login</button></router-link>
+		  <router-link to="/main"><button>Login</button></router-link>
 	  </form>
   </div>
 </template>

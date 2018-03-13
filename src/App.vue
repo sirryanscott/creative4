@@ -1,5 +1,6 @@
 <template>
 	<div id="app">
+		<h1>Food Storage Inventory</h1>
 		<router-view/>
 		<div id="footer">
 			<div id="github">
@@ -23,7 +24,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
+}
+h1 {
+	text-align: center;
 }
 #github {
 	width: 100px;

@@ -1,20 +1,27 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '@/components/HomePage'
+import Login from '@/components/Login'
+import Logout from '@/components/Logout'
+import Main from '@/components/Main'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HomePage',
-      component: HomePage
+      path: '/logout',
+      name: 'Logout',
+      component: Logout
+    },
+    {
+      path: '/main',
+      name: 'Main',
+      component: Main
     },
     {
       path: '/',
-      name: 'HomePage',
-      component: HomePage
+      name: 'Login',
+      component: Login
     }
   ]
 })
