@@ -19,6 +19,8 @@
  .clear {
      float: clear;
  }
+ h1 {
+ }
  nav {
      display: grid;
  }
@@ -68,4 +70,7 @@
  input[type=checkbox]:checked ~ #menu{
      display: block;
  }
+checkbox {
+	text-align: left;
+}
 </style>

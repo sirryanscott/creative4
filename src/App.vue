@@ -1,5 +1,6 @@
 <template>
 	<div id="app">
+		<app-header></app-header>
 		<h1>Food Storage Inventory</h1>
 		<router-view/>
 		<div id="footer">
@@ -13,17 +14,26 @@
 </template>
 
 <script>
+import AppHeader from './components/AppHeader.vue'
 export default {
+		components: {  
+			AppHeader,
+		},
   name: 'App'
 }
 </script>
 
 <style>
+body {
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+app-header {
+	display: none;
 }
 h1 {
 	text-align: center;
